@@ -26,12 +26,12 @@ body (ejemplo), (debe tener el mismo comando en la ruta y en el campo comando en
 
 ## BOT
 
-5. GET `localhost:3000/api/bot/start`: Iniciar el bot, debe recibir una lista de interaciones
+5. POST `localhost:3000/api/bot/start`: Iniciar el bot, debe recibir una lista de interaciones
 6. GET `localhost:3000/api/bot/stop`: Detiene el bot
-7. GET `localhost:3000/api/bot/update`: Actualiza el bot, debe recibir una lista de interaciones
+7. POST `localhost:3000/api/bot/update`: Actualiza el bot, debe recibir una lista de interaciones
 
 ```
-(body ejemplo start, y update)
+(body ejemplo y update)
 {
     "interactions": [
         {

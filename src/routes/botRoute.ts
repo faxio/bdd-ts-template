@@ -3,8 +3,8 @@ import { updateBot, stopBot, startBot } from "../controllers/botController";
 
 const router = express.Router();
 
-router.get("/start", startBot);
-router.get("/update", updateBot);
+router.post("/start", startBot);
+router.post("/update", updateBot);
 router.get("/stop", stopBot);
 
 export { router as botRouter };

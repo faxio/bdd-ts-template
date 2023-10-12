@@ -1,7 +1,16 @@
 import { Interaction } from "../models/Interaction";
 import { Request, Response } from "express";
 
-let listInteraction: Interaction[] = [];
+let listInteraction: Interaction[] = [
+  {
+    command: "first",
+    message: "comando de prueba",
+  },
+  {
+    command: "second",
+    message: "Segundo comando de prueba",
+  },
+];
 
 export const createInteraction = (req: Request, res: Response) => {
   const interaction = new Interaction(req.body);
